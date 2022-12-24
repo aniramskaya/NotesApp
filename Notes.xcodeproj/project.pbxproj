@@ -15,6 +15,12 @@
 		D77AE17629565202001CF9B7 /* OverviewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77AE17529565202001CF9B7 /* OverviewListViewController.swift */; };
 		D77AE1792956523A001CF9B7 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77AE1782956523A001CF9B7 /* NoteTableViewCell.swift */; };
 		D77AE17B29565246001CF9B7 /* NoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D77AE17A29565246001CF9B7 /* NoteTableViewCell.xib */; };
+		D78B335529566EBC00D11561 /* TextFormattingButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78B335429566EBC00D11561 /* TextFormattingButtons.swift */; };
+		D78B33572956733300D11561 /* CategoriesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78B33562956733300D11561 /* CategoriesViewCell.swift */; };
+		D78B335A2956736200D11561 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78B33592956736200D11561 /* UIView+Extension.swift */; };
+		D78B335C2956737500D11561 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78B335B2956737500D11561 /* UIColor+Extension.swift */; };
+		D78B335E295678C300D11561 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78B335D295678C300D11561 /* UIButton+Extension.swift */; };
+		D78B33602956A0E400D11561 /* EditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78B335F2956A0E400D11561 /* EditingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		D77AE17529565202001CF9B7 /* OverviewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewListViewController.swift; sourceTree = "<group>"; };
 		D77AE1782956523A001CF9B7 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 		D77AE17A29565246001CF9B7 /* NoteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteTableViewCell.xib; sourceTree = "<group>"; };
+		D78B335429566EBC00D11561 /* TextFormattingButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFormattingButtons.swift; sourceTree = "<group>"; };
+		D78B33562956733300D11561 /* CategoriesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewCell.swift; sourceTree = "<group>"; };
+		D78B33592956736200D11561 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		D78B335B2956737500D11561 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		D78B335D295678C300D11561 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		D78B335F2956A0E400D11561 /* EditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				D77AE17129565057001CF9B7 /* Application */,
+				D78B33582956735200D11561 /* Helpers */,
+				D78B33672956E5BD00D11561 /* Models */,
 				D77AE17229565076001CF9B7 /* Controllers */,
 				D77AE1772956521C001CF9B7 /* Views */,
 				D77AE1702956501E001CF9B7 /* SupportingFiles */,
@@ -91,6 +105,7 @@
 		D77AE17229565076001CF9B7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D78B335F2956A0E400D11561 /* EditingViewController.swift */,
 				D77AE17529565202001CF9B7 /* OverviewListViewController.swift */,
 			);
 			path = Controllers;
@@ -99,10 +114,29 @@
 		D77AE1772956521C001CF9B7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D78B33562956733300D11561 /* CategoriesViewCell.swift */,
+				D78B335429566EBC00D11561 /* TextFormattingButtons.swift */,
 				D77AE1782956523A001CF9B7 /* NoteTableViewCell.swift */,
 				D77AE17A29565246001CF9B7 /* NoteTableViewCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D78B33582956735200D11561 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D78B33592956736200D11561 /* UIView+Extension.swift */,
+				D78B335B2956737500D11561 /* UIColor+Extension.swift */,
+				D78B335D295678C300D11561 /* UIButton+Extension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D78B33672956E5BD00D11561 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +213,13 @@
 			files = (
 				D77AE15D29564FA0001CF9B7 /* AppDelegate.swift in Sources */,
 				D77AE15F29564FA0001CF9B7 /* SceneDelegate.swift in Sources */,
+				D78B335A2956736200D11561 /* UIView+Extension.swift in Sources */,
+				D78B335C2956737500D11561 /* UIColor+Extension.swift in Sources */,
 				D77AE17629565202001CF9B7 /* OverviewListViewController.swift in Sources */,
+				D78B335E295678C300D11561 /* UIButton+Extension.swift in Sources */,
+				D78B335529566EBC00D11561 /* TextFormattingButtons.swift in Sources */,
+				D78B33602956A0E400D11561 /* EditingViewController.swift in Sources */,
+				D78B33572956733300D11561 /* CategoriesViewCell.swift in Sources */,
 				D77AE1792956523A001CF9B7 /* NoteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

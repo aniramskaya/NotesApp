@@ -9,9 +9,12 @@ final class NoteTableViewCell: UITableViewCell {
     
     //MARK: - flow funcs
     func configure(with item: String){
+        configureIcon(with: "String")
     }
 
     func configureIcon(with name: String) {
+        icon.rounded()
+        icon.image = UIImage(named: "photo")
     }
 
     func configureTitileLabel(with text: String) {
